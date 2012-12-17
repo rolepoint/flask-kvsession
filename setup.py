@@ -16,14 +16,15 @@ def read(fname):
 setup(
     name='Flask-KVSession',
     version='0.4dev',
-    url='https://github.com/mbr',
+    url='https://github.com/mbr/flask-kvsession',
     license='MIT',
     author='Marc Brinkmann',
     author_email='git@marcbrinkmann.de',
     description='Transparent server-side session support for flask',
     long_description=read('README.rst'),
-    packages=['flaskext', 'tests'],
-    namespace_packages=['flaskext'],
+    packages=['tests'],
+    py_modules=['kvsession'],
+    # namespace_packages=['flaskext'],
     zip_safe=False,
     platforms='any',
     install_requires=[
