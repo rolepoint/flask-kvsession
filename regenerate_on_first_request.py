@@ -3,7 +3,7 @@
 
 import flask
 from simplekv.memory import DictStore
-from flaskext.kvsession import KVSessionExtension
+from kvsession import KVSessionExtension
 
 store = DictStore()
 
